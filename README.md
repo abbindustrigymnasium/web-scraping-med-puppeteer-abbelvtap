@@ -7,8 +7,8 @@ Filen *chris.js* hämtar texten till alla låtar om *independence day* från sid
 
 ## Instruktioner
 
-1. Öppna terminalen och kör:
-~~~sh
+1. Kör filen *chris.js* genom att öppna terminalen och köra kommandot:
+~~~
 node chris.js
 ~~~
-
+2. Kör *dataHandler.py*
