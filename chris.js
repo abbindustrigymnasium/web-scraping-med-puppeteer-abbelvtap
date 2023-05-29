@@ -22,7 +22,7 @@ const getQuotes = async () => {
       // hämtar alla element som är låtar
       var linkList = document.querySelectorAll(".lf-list__cell.lf-list__title.lf-list__cell--full > a");
   
-      // Gör listan med sång element till en array
+      // Gör listan med sång-element till en array
       // hämtar titeln och länken för varje sång
       return Array.from(linkList).map((song) => {
         // hämtar attributena 'title' och 'href' för den hämtade låten
@@ -39,11 +39,12 @@ const getQuotes = async () => {
 
     // hämta texten till varja låt 
     for (var i=0;i<songlinks.length;i++){
-        // gå till text sidan för en låt
+        // gå till text-sidan för en låt
         await page.goto('https://www.lyricsfreak.com' + songlinks[i].link , {
             waitUntil: "domcontentloaded",
         });
 
+        // väntar 5 sekunder
         await new Promise(resolve => setTimeout(resolve, 5000))
 
         // hämtar texten
