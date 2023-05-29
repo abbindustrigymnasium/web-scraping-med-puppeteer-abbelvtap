@@ -8,7 +8,7 @@ Filen *chris.js* hämtar texten till alla låtar om *independence day* från sid
 ## Instruktioner
 
 1. Öppna terminalen och kör:
-~~~node
+~~~sh
 node chris.js
 ~~~
 
