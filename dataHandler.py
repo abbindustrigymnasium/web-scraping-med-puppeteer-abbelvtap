@@ -35,13 +35,12 @@ for char in characters:
 # sorterar objektet med det totala antalet av olika tecken i storleksordning med den största först
 letters = dict(sorted(letters.items(), key=lambda x: x[1], reverse=True))
 
-# x-coordinates of left sides of bars 
+# skapar listor för att kunna visa datan i ett diagram
 left = []
-# heights of bars
 height = []
-# labels for bars
 tick_label = []
 
+# populerar listorna med datat
 i = 1
 for letter in letters:
     left.append(i)
@@ -49,19 +48,18 @@ for letter in letters:
     height.append(letters[letter])
     tick_label.append(letter)
  
-# plotting a bar chart
+# plottar ett stapeldiagram
 barplot = plt.bar(tick_label, height,  color = ['red', 'orange','yellow','green','blue','purple'])
 
 for i, v in enumerate(height):
     plt.text(i, v, str(v), ha='center', va='bottom')
   
-# naming the x-axis
+# namnger axlarna
 plt.xlabel('character')
-# naming the y-axis
 plt.ylabel('occurrences')
-# plot title
+# diagramm titeln
 plt.title('lyrics analysis')
   
 
-# function to show the plot
+# visar diagrammet
 plt.show()
