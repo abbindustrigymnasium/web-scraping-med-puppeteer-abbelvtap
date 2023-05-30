@@ -73,13 +73,9 @@ const getQuotes = async () => {
     var data = JSON.stringify(lyricsList)
 
     // skriver datan i en json fil
-    fs.writeFile("data.json", data, (error) => {
-      // throwing the error
-      // in case of a writing problem
+    fs.writeFile("data.json", data, (error) => {  
       if (error) {
-        // logging the error
         console.error(error);
-    
         throw error;
       }
 

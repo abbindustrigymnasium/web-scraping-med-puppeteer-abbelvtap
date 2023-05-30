@@ -20,6 +20,7 @@ Filen *chris.js* hämtar texten till alla låtar om *independence day* från sid
 5. Kör *dataHandler.py*
 
 <img src="/images/intro.jpg" width="500">
-<!-- ![Tux, the Linux mascot](/images/intro.jpg) -->
 
+## Licens
 
+Projektet är licensierat under MIT-licens.
