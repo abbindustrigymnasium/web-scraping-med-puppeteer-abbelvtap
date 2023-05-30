@@ -19,3 +19,7 @@ Filen *chris.js* hämtar texten till alla låtar om *independence day* från sid
 4. Kör filen *chris.js* genom att köra kommandot `node chris.js`
 5. Kör *dataHandler.py*
 
+<img src="/images/intro.jpg" width="200">
+<!-- ![Tux, the Linux mascot](/images/intro.jpg) -->
+
+
