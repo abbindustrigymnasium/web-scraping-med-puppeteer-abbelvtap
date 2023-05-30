@@ -51,6 +51,7 @@ for letter in letters:
 # plottar ett stapeldiagram
 barplot = plt.bar(tick_label, height,  color = ['red', 'orange','yellow','green','blue','purple'])
 
+# visar värdet på staplarna över varje stapel
 for i, v in enumerate(height):
     plt.text(i, v, str(v), ha='center', va='bottom')
   
